@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    position: relative;
+    overflow: hidden; /* Ensure no overflow is visible */
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 70px;
+    padding-bottom: 70px; /* Add padding to the bottom */
+    gap: 50px;
+    position: relative;
+    z-index: 2; /* Ensure it stays above the video */
+}
+
+#prlogo {
+    padding-top: 30px;
+    margin-left: 3%;
+    margin-right: 90%;
+    width: 50px;
+    position: relative;
+    z-index: 2; /* Ensure it stays above the video */
+}
+
+video#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container */
+    z-index: 0; /* Ensure the video is behind text and other elements */
+    opacity: 0.7; /* Adjust opacity for desired effect */
+    pointer-events: none; /* Ensure video doesn't interfere with hover effects */
+}
+
+#left {
+    height: 100%;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    font-weight: 500;
+}
+
+#bottom-left {
+    width: 100%;
+}
+
+#color {
+    width: fit-content;
+    padding: 10px 15px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+#color h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#color1 {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(106, 98, 112, 0.747);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+#color2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+#left h2 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#left p {
+    font-size: 20px;
+    width: 50%;
+}
+
+#overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Semi-transparent overlay */
+    z-index: 1; /* Place overlay above video but below text */
+}
+
+#right {
+    height: 100%;
+    width: 48%;
+    position: relative;  
+}
+
+#right-top {
+    position: relative; /* Add relative positioning */
+    top: -59px; /* Move this element up by 50px (adjust as needed) */
+    padding-left: 100px;
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 200px;
+}
+
+#right-top h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#right-top h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#side, #side-video {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    border-radius: 2%;
+    height: 500px; /* Set the desired height */
+    width: 500px; /* Set the desired width */
+    object-fit: cover; /* Cover the area by scaling the image/video */
+    object-position: center; /* Center the image/video */
+    z-index: 1; /* Ensure it stays above the background video */
+}
+
+#side-video {
+    display: none;
+    opacity: 0.9; /* Increase opacity to make it stand out */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Optional: Add border to distinguish from background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better distinction */
+}
+
+#black {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(24, 24, 48);
+    color: aliceblue;
+    border-radius: 50%;
+    top: 20%;
+    left: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#black h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#rot {
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 50%;
+    rotate: -90deg;
+    left: -7%;
+}
