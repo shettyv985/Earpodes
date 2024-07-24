@@ -8,7 +8,7 @@ https://github.com/user-attachments/assets/b28461cd-c351-4b84-bee2-97746ad60cbc
 I just wrapped up an exciting project—designing a sleek and modern e-commerce website for EarPods. I tried my best to provide an immersive shopping experience that stands out.
 
 **Project URL:**
-(Include the link to the live project or a demo video)
+(https://shettyv985earpods.netlify.app/)
 
 **Key Features:**
 
